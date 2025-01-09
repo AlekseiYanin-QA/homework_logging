@@ -7,11 +7,8 @@
         <file>${INFO_LOG_FILE}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>${PROJECT_DIR}/info.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
-            <!-- Максимальный размер файла перед ротацией -->
             <maxFileSize>5MB</maxFileSize>
-            <!-- Максимальное количество архивных файлов -->
             <maxHistory>10</maxHistory>
-            <!-- Общий размер всех архивных файлов -->
             <totalSizeCap>100MB</totalSizeCap>
         </rollingPolicy>
         <encoder>
@@ -28,11 +25,8 @@
         <file>${DEBUG_LOG_FILE}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>${PROJECT_DIR}/debug.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
-            <!-- Максимальный размер файла перед ротацией -->
             <maxFileSize>5MB</maxFileSize>
-            <!-- Максимальное количество архивных файлов -->
             <maxHistory>10</maxHistory>
-            <!-- Общий размер всех архивных файлов -->
             <totalSizeCap>100MB</totalSizeCap>
         </rollingPolicy>
         <encoder>
